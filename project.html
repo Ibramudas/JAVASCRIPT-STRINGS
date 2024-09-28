@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1>JAVASCRIPT PROJECTS</h1>
+        <p id="h4"></p>
+        <script>
+            var value=Math.random()
+            document.getElementById("h4").innerHTML="A random number between 0 and 1 is " 
+            + value;
+        </script>
+        <h6 id="h6"></h6>
+        <script>
+            var day;
+            switch (new Date().getDay())
+            {
+                case 0:
+                    day="Sunday";
+                    break;
+                case 1:
+                    day="Monday";
+                    break;
+                case 2:
+                    day="Tuesday";
+                    break;
+                case 3:
+                    day="Wednesday";
+                    break;
+                case 4:
+                    day="Thursday";
+                    break;    
+                case 5:
+                    day="Friday";
+                    break;
+                case 6:
+                    day="Saturday";
+            }
+            document.getElementById("h6").innerHTML="Today is " + day;
+        </script>
+        <h5>ROUNDED RANDOM NUMBERS</h5>
+        <h6 id="h1"></h6>
+        <script>
+            var numbers=["234.55", "442.6", "679.8", "445.4" ]
+            var number="";
+            var i;
+            for (i=0; i<numbers.length;i++)
+            {
+                number+=numbers[i]+"<br>"
+            }
+            document.getElementById("h1").innerHTML="These are the rounded numbers:" +number;
+        </script>
+</html>
